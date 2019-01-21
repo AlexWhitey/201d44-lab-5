@@ -80,7 +80,6 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 // // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
     var outputOne = sum(sum(a,b)[0], c)[0];
     var outputTwo = multiply(multiply(a,b)[0], c)[0];
     var messageOne = a + ' and ' + b + ' and ' + c + ' sum to ' + outputOne + '.';
@@ -115,8 +114,6 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 // // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
-
-function sumArray(sumArr) { //eslint-disable-line
 
 function sumArray() { //eslint-disable-line
     var output = sum(sum(testArray[0],testArray[1])[0], testArray[2])[0];
