@@ -115,9 +115,9 @@ Test this function by hand in the console to get it working, and when you think 
 // // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray() { //eslint-disable-line
-    var output = sum(sum(testArray[0],testArray[1])[0], testArray[2])[0];
-    var message = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + output + ' is their sum.'
+function sumArray(array) { //eslint-disable-line
+    var output = sum(sum(array[0], array[1])[0], array[2])[0];
+    var message = array[0] + ',' + array[1] + ',' + array[2] + ' was passed in as an array of numbers, and ' + output + ' is their sum.'
     return [output, message]
 }
 
@@ -148,9 +148,9 @@ Test this function by hand in the console to get it working, and when you think 
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // // Write your code here
-function multiplyArray() { //eslint-disable-line
-    var output = multiply(multiply(testArray[0],testArray[1])[0], testArray[2])[0];
-    var message = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + output + '.'
+function multiplyArray(array) { //eslint-disable-line
+    var output = multiply(multiply(array[0], array[1])[0], array[2])[0];
+    var message = 'The numbers ' + array[0] + ',' +  array[1] + ',' + array[2] + ' have a product of ' + output + '.'
     return [output, message]
 }
 
@@ -186,22 +186,15 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 // This function should be dynamic, accepting an array of any length.
 
-// Write your code here
-var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
-// Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
-
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
-}
 // // Write your code here
 var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
-function multiplyAnyArray() { //eslint-disable-line
+function multiplyAnyArray(array) { //eslint-disable-line
     var output = 1;
-    for (let i in testDynamicArray) {
-        output *= testDynamicArray[i];
+    for (let i in array) {
+        output *= array[i];
     }
-    var message = 'The numbers ' + testDynamicArray.toString() + ' have a product of ' + output + '.';
+    var message = 'The numbers ' + array.toString() + ' have a product of ' + output + '.';
     return [output, message]
 } 
 // Here is the test for multiplyArray(); uncomment it to run it
