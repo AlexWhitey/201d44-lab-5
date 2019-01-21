@@ -200,3 +200,5 @@ function multiplyAnyArray(array) { //eslint-disable-line
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
 testMultiplyAnyArray(testDynamicArray);
+
+
